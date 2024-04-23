@@ -68,3 +68,47 @@ fun MyApplicationTheme(
             content = content
     )
 }
+
+
+
+
+
+
+
+object EconomistTopography {
+    // <--------------------- Serif  ------------------>
+    val primarySerifOsf: AppTopographyTwo.Serif.Osf.PrimarySerifOsf
+        @Composable
+        get() = LocalSerifOsfProvider.current
+
+    val primarySerifSc: AppTopographyTwo.Serif.Sc.PrimarySerifSc
+        @Composable
+        get() = LocalSerifScProvider.current
+
+    val primarySerifLf: AppTopographyTwo.Serif.Lf.PrimarySerifLf
+        @Composable
+        get() = LocalSerifLfProvider.current
+
+    // <--------------------- Sans ------------------>
+    val primarySansOsf: AppTopographyTwo.Sans.Osf.PrimarySansOsf
+        @Composable
+        get() = LocalSansOsfProvider.current
+
+    val primarySansSc: AppTopographyTwo.Sans.Sc.PrimarySansSc
+        @Composable
+        get() = LocalSansScProvider.current
+
+    val primarySansLf: AppTopographyTwo.Sans.Lf.PrimarySansLf
+        @Composable
+        get() = LocalSansLfProvider.current
+
+    // <--------------------- SundayClarendon ------------------>
+    val Secondary1843Osf: AppTopographyTwo.SundayClarendon.Osf.Secondary1843Osf
+        @Composable
+        get() = LocalSundayClarendonOsfProvider.current
+
+    val Secondary1843Lf: AppTopographyTwo.SundayClarendon.Lf.Secondary1843Lf
+        @Composable
+        get() = LocalSundayClarendonLfProvider.current
+
+}
